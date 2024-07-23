@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import NameImg from "../assets/Images/name.png"
-import './GraffitiText.css';
+
 const links = [
   {
     title: "Home",
@@ -40,9 +40,7 @@ const Navbar = () => {
 
   return (
     <header className="text-white body-font fixed inset-x-0 z-50 bg-gray-950">
-      <div className="graffiti-text">
-      Graffiti Art!
-    </div>
+    
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
           data-aos="fade-right"
