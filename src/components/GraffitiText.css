@@ -1,0 +1,16 @@
+.graffiti-text {
+    font-size: 24px;
+    animation: graffiti 5s infinite alternate;
+  }
+  
+  @keyframes graffiti {
+    from {
+      transform: translateX(0);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateX(10px);
+      opacity: 1;
+    }
+  }
+  
