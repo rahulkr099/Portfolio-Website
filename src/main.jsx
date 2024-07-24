@@ -5,11 +5,15 @@ import './index.css'
 import './index.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThemeProvider } from './useContext/ThemeContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ThemeProvider>
+  ,
 )
 AOS.init({
   offset: 0

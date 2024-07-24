@@ -3,6 +3,9 @@ import { Link } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import NameImg from "../assets/Images/name.png"
+import { useTheme } from "../useContext/ThemeContext";
+
+
 
 const links = [
   {
@@ -32,14 +35,24 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked)
+  }
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {theme,toggleTheme} = useTheme()
+  console.log('themeName:',theme)
+  console.log("theme:",toggleTheme);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="text-white body-font fixed inset-x-0 z-50 bg-gray-950">
+    <div className={`${theme==="Light"?'light':'dark'}`}>
+    <header className="body-font fixed inset-x-0 z-50 bg-gray-300 text-black dark:bg-neutral-900 dark:text-white">
     
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
@@ -54,7 +67,7 @@ const Navbar = () => {
           className="flex justify-center items-center"
         >
           <img
-            className="w-12 h-12 ml-3 cursor-pointer scale-125 lg:scale-150 lg:ml-10"
+            className="w-12 h-12 ml-3 cursor-pointer scale-125 lg:scale-150 lg:ml-10 hover:animate-pulse"
             src={NameImg}
             alt="Rahul"
           />
@@ -74,12 +87,33 @@ const Navbar = () => {
                 offset={-100}
                 duration={750}
                 to={item.link}
-                className="mr-5 cursor-pointer hover:text-green-400 md:mr-12"
+                className="mr-5 cursor-pointer hover:text-green-400 hover:animate-bounce md:mr-12"
               >
                 {item.title}
               </Link>
             );
           })}
+        <label className='flex cursor-pointer select-none items-center w-16 '>
+        <div className='relative right-6'>
+          <input
+            type='checkbox'
+            checked={isChecked}
+            onClick={toggleTheme}
+            onChange={handleCheckboxChange}
+            className='sr-only'
+          />
+          <div
+            className={`box block h-10 w-20 rounded-full ${
+              isChecked ?'bg-day bg-cover':'bg-night bg-cover'
+            }`}
+          ></div>
+          <div
+            className={`absolute left-2 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 dark:bg-white transition border-[1.9px] border-red-300 dark:border-gray-800 bg-opacity-60 dark:bg-opacity-20 ${
+              isChecked ? 'translate-x-full' : ''
+            }`}
+          ></div>
+        </div>
+      </label>
         </nav>
         <div
           data-aos="fade-left"
@@ -97,7 +131,7 @@ const Navbar = () => {
         </div>
         {isMenuOpen && (
           <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden">
-            <div className="rounded-b-lg bg-gray-300 shadow-lg px-5 pb-4 text-black">
+            <div className="rounded-b-lg bg-gray-300 text-black dark:text-white dark:bg-gray-800 shadow-lg px-5 pb-4 ">
               <nav
                 data-aos="zoom-in-down"
                 data-aos-duration="1000"
@@ -120,12 +154,36 @@ const Navbar = () => {
                     </Link>
                   );
                 })}
+              <label className='flex cursor-pointer select-none items-center w-16 '>
+        <div className='relative left-44 md:left-80'>
+          <input
+            type='checkbox'
+            checked={isChecked}
+            onClick={toggleTheme}
+            onChange={handleCheckboxChange}
+            className='sr-only'
+          />
+          <div
+            className={`box block h-10 w-20 rounded-full ${
+              isChecked ?'bg-day bg-cover':'bg-night bg-cover'
+            }`}
+          ></div>
+          <div
+            className={`absolute left-2 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 dark:bg-white transition border-[1.9px] border-red-300 dark:border-gray-800 bg-opacity-60 dark:bg-opacity-20 ${
+              isChecked ? 'translate-x-full' : ''
+            }`}
+          ></div>
+        </div>
+      </label>
+
               </nav>
             </div>
           </div>
         )}
       </div>
-    </header>
+    {/* <button className="absolute w-16 h-16 top-2 right-0 bg-neutral-900 dark:bg-white rounded-full dark:text-black font-semibold" onClick={toggleTheme}>{theme}</button>   */}
+    
+    </header></div>
   );
 };
 

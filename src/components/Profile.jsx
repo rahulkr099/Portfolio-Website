@@ -3,19 +3,22 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import SocialHandles from "./SocialHandles";
 import ProfilePic from "../assets/Images/hero2.png"
+import { useTheme } from "../useContext/ThemeContext";
 
 const Profile = () => {
+  const {theme} = useTheme()
   return (
-    <section className="text-white body-font pt-16 lg:min-h-75vh bg-black">
+    <div className={`${theme==="Light"?'light':'dark'}`}>
+    <section className="body-font pt-16 lg:min-h-75vh  bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
         <div
-          data-aos="zoom-in-up"
+          data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-once="false"
           className="w-5/6 sm:max-w-xs md:max-w-sm lg:max-w-md sm:w-2/6 lg:mr-10 xl:mr-20 lg:p-5 lg:w-1/3 xl:w-1/4 "
         >
           <img
-            className="object-cover object-center mx-auto border-2 w-60 border-white pointer-events-none rounded-full backdrop-contrast-200 backdrop-brightness-200"
+            className="object-cover object-center mx-auto border-2 w-60 border-green-300 bg-gray-400 dark:bg-gray-800 pointer-events-none rounded-full backdrop-contrast-200 backdrop-brightness-200"
             alt="Rahul"
           src={ProfilePic}
           />
@@ -23,18 +26,18 @@ const Profile = () => {
         <div className="lg:flex-grow lg:pr-4 lg:mr-14 flex flex-col md:mb-0 items-center text-center xl:scale-105">
           <SocialHandles />
           <h2
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
             data-aos-duration="1500"
             data-aos-once="false"
-            className="title-font md:text-3xl text-2xl mb-4 text-center font-medium text-white"
+            className="title-font md:text-3xl text-2xl mb-4 text-center font-medium"
           >
-            Hello , I am <span className="text-green-400">Rahul Kumar</span>
+            Hello , I am <span className="text-green-400 animate-pulse italic">Rahul Kumar</span>
           </h2>
           <div
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
             data-aos-duration="1500"
             data-aos-once="false"
-            className="text-3xl text-white mb-4 font-medium lg:inline-block"
+            className="text-3xl mb-4 font-medium lg:inline-block"
           >
             &nbsp;
             <Typewriter
@@ -46,23 +49,23 @@ const Profile = () => {
             />
           </div>
           <p
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
             data-aos-duration="2000"
             data-aos-once="false"
-            className="mb-2 text-white text-lg md:text-xl leading-relaxed"
+            className="mb-2 text-lg md:text-xl leading-relaxed"
           >
             I’m proficient in developing web applications using the MERN stack.
           </p>
           <p
-            data-aos="zoom-in-up"
+            data-aos="zoom-out"
             data-aos-duration="2000"
             data-aos-once="false"
-            className="text-lg text-white md:text-xl"
+            className="text-lg md:text-xl"
           >
             I craft applications using MongoDB, Express, React, and Node.
           </p>
           <div
-            data-aos="zoom-in-up"
+            data-aos="zoom-out"
             data-aos-duration="2000"
             data-aos-once="false"
             className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
@@ -130,7 +133,7 @@ const Profile = () => {
           </g>
         </svg>
       </div>
-    </section>
+    </section></div>
   );
 };
 

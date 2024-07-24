@@ -1,9 +1,12 @@
 import AboutImg from "../assets/Images/about.png"
 import { Link } from "react-scroll";
+import {useTheme} from "../useContext/ThemeContext";
 
 const About = () => {
+  const {theme} = useTheme()
   return (
-    <section className="body-font bg-black text-white">
+    <div className={`${theme==="Light"?'light':'dark'}`}>
+    <section className="body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="p-5 mt-3 mx-auto md:mt-5 md:mx-10 lg:mx-16">
         <div id="about" className="flex flex-col text-center w-full mb-3">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2">
@@ -26,7 +29,7 @@ const About = () => {
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
           >
             <img
-              className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
+              className="object-cover object-center mx-auto pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
               alt="hero"
               src={AboutImg}
             />
@@ -36,7 +39,7 @@ const About = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-once="false"
-              className="font-medium text-white text-lg lg:text-base xl:text-xl leading-loose xl:leading-8"
+              className="font-medium text-lg lg:text-base xl:text-xl leading-loose xl:leading-8"
             >
               I am a passionate and dedicated web developer with a strong background in creating visually stunning and highly functional websites.<br/>
               Throughout my career, I have developed excellency in various web technologies, including HTML5, CSS3, and JavaScript. I am professional in popular libraries such as ReactJS and frameworks like NextJS and TailwindCSS, enabling me to build robust and responsive websites.<br/>
@@ -73,7 +76,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section></div>
   );
 };
 
