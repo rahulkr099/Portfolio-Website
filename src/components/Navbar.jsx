@@ -56,7 +56,7 @@ const Navbar = () => {
     
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
-          data-aos="fade-right"
+          data-aos="zoom-in-up"
           data-aos-duration="1000"
           data-aos-once="false"
           spy={true}
@@ -73,7 +73,7 @@ const Navbar = () => {
           />
         </Link>
         <nav
-          data-aos="fade-left"
+          data-aos="zoom-in-up"
           data-aos-duration="1000"
           data-aos-once="false"
           className="hidden md:ml-auto lg:flex flex-wrap items-center text-xl justify-center"
@@ -116,7 +116,7 @@ const Navbar = () => {
       </label>
         </nav>
         <div
-          data-aos="fade-left"
+          data-aos="zoom-in-up"
           data-aos-duration="1000"
           data-aos-once="false"
           className="lg:hidden mr-2"
