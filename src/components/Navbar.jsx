@@ -155,7 +155,7 @@ const Navbar = () => {
                   );
                 })}
               <label className='flex cursor-pointer select-none items-center w-16 '>
-        <div className='relative left-44 md:left-80'>
+        <div className='relative left-28 md:left-80 '>
           <input
             type='checkbox'
             checked={isChecked}
