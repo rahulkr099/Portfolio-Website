@@ -13,12 +13,17 @@ export const ThemeProvider = ({children}) =>{
     const [isDarkMode,setIsDarkMode]= useState(false);
 
     const toggleTheme = ()=>{
-        AOS.refresh();
+        
         setIsDarkMode((prevState)=>!prevState);
     };
     const theme = isDarkMode?'Dark':'Light';
     useEffect(()=>{
-        toggleTheme();;
+        toggleTheme();
+        AOS.refresh();
+        AOS.init({
+            offset: -7
+          });
+    console.log('theme useEffect is run')
     },[setIsDarkMode])
 
     return (

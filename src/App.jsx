@@ -17,7 +17,7 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     AOS.init({
-      offset: 1
+      offset: -7
     });
 }, []); // Empty dependency array ensures it runs once after mount
   return (
