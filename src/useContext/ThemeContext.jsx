@@ -21,7 +21,7 @@ export const ThemeProvider = ({children}) =>{
         toggleTheme();
         AOS.refresh();
         AOS.init({
-            offset: -7
+            offset: 0
           });
     console.log('theme useEffect is run')
     },[setIsDarkMode])
