@@ -14,7 +14,7 @@ const Profile = () => {
         <div
           data-aos="zoom-in"
           data-aos-duration="1000"
-          data-aos-once="false"
+          data-aos-once="true"
           className="w-5/6 sm:max-w-xs md:max-w-sm lg:max-w-md sm:w-2/6 lg:mr-10 xl:mr-20 lg:p-5 lg:w-1/3 xl:w-1/4 "
         >
           <img
@@ -28,7 +28,7 @@ const Profile = () => {
           <h2
             data-aos="zoom-in"
             data-aos-duration="1500"
-            data-aos-once="false"
+            data-aos-once="true"
             className="title-font md:text-3xl text-2xl mb-4 text-center font-medium"
           >
             Hello , I am <span className="text-green-400 animate-pulse italic">Rahul Kumar</span>
