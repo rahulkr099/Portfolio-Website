@@ -1,6 +1,5 @@
 import { createContext,useContext, useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const ThemeContext = createContext();
 
@@ -19,10 +18,6 @@ export const ThemeProvider = ({children}) =>{
     const theme = isDarkMode?'Dark':'Light';
     useEffect(()=>{
         toggleTheme();
-        AOS.refresh();
-        AOS.init({
-            offset: 0
-          });
     console.log('theme useEffect is run')
     },[setIsDarkMode])
 

@@ -10,16 +10,11 @@ import Home from './pages/Home';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import ParticleBG from './components/ParticleBG';
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { useEffect } from 'react';
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      offset: 0
-    });
-}, []); // Empty dependency array ensures it runs once after mount
+
   return (
     <div className="App">
       <ParticleBG></ParticleBG>

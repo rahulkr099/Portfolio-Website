@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const SocialHandles = () => {
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-once="false" className="flex gap-5 my-4">
+    <div className="flex gap-5 my-4">
         <a className=" text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-150" href="https://github.com/rahulkr099" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>

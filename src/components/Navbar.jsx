@@ -4,7 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import NameImg from "../assets/Images/name.png"
 import { useTheme } from "../useContext/ThemeContext";
-
+import {motion} from 'framer-motion'
 
 
 const links = [
@@ -56,9 +56,6 @@ const Navbar = () => {
     
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-          data-aos-once="false"
           spy={true}
           smooth={true}
           offset={-100}
@@ -73,9 +70,7 @@ const Navbar = () => {
           />
         </Link>
         <nav
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-          data-aos-once="false"
+         
           className="hidden md:ml-auto lg:flex flex-wrap items-center text-xl justify-center"
         >
           {links.map((item) => {
@@ -87,9 +82,12 @@ const Navbar = () => {
                 offset={-100}
                 duration={750}
                 to={item.link}
+                
                 className="mr-5 cursor-pointer hover:text-green-400 hover:animate-bounce md:mr-12"
               >
-                {item.title}
+                <motion.div
+                whileHover={{scale:1.5,textShadow:"0px 0px 8px rgba(0,255,0,0.5)"}}
+                >{item.title}</motion.div>
               </Link>
             );
           })}
@@ -116,9 +114,7 @@ const Navbar = () => {
       </label>
         </nav>
         <div
-          data-aos="zoom-in-up"
-          data-aos-duration="1000"
-          data-aos-once="false"
+          
           className="lg:hidden mr-2"
         >
           <button onClick={toggleMenu} className="p-2 text-white">
@@ -133,9 +129,7 @@ const Navbar = () => {
           <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden">
             <div className="rounded-b-lg bg-gray-300 text-black dark:text-white dark:bg-gray-800 shadow-lg px-5 pb-4 ">
               <nav
-                data-aos="zoom-in-down"
-                data-aos-duration="1000"
-                data-aos-once="false"
+                
                 className="flex flex-col gap-y-7 text-xl"
               >
                 {links.map((item) => {
@@ -145,7 +139,7 @@ const Navbar = () => {
                       onClick={() => setIsMenuOpen(false)}
                       spy={true}
                       smooth={true}
-                      offset={-100}
+                      offset={100}
                       duration={750}
                       to={item.link}
                       className="cursor-pointer hover:text-green-400"
@@ -181,7 +175,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    {/* <button className="absolute w-16 h-16 top-2 right-0 bg-neutral-900 dark:bg-white rounded-full dark:text-black font-semibold" onClick={toggleTheme}>{theme}</button>   */}
     
     </header></div>
   );
