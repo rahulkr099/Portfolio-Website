@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import SocialHandles from "./SocialHandles";
 import { useTheme } from "../useContext/ThemeContext";
+import {motion} from 'framer-motion'
 
 const Contact = () => {
   const {theme} = useTheme()
@@ -25,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
+    <section className=" body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="px-3 py-5 mx-auto text-center md:mt-7 sm:mx-7 md:mx-12 lg:mx-32 xl:mx-56">
         <div id="contact" className="flex flex-col text-center w-full mb-4">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 ">
@@ -58,13 +59,31 @@ const Contact = () => {
           </div>
           <form  ref={formRef} onSubmit={handleSubmit} className="flex flex-col p-2 md:w-1/2 md:p-4 lg:px-5 lg:py-7 lg:m-4 lg:w-3/5">
             <div  className="p-2 w-full">
-              <input required placeholder="Name" type="text" name="from_name" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none tplaceholder-black dark:placeholder-whiteext-base outline-none text-black dark:text-white p-2 leading-8 transition-colors duration-200 ease-in-out"/>
+              <motion.input 
+              layout='position'
+              initial={{opacity:0,y:59}}
+               whileInView={{opacity:1,y:0}}
+               viewport={{once:false, amount:'0.1'}}
+               transition={{duration:1,stiffness:120}}
+              required placeholder="Name" type="text" name="from_name" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none tplaceholder-black dark:placeholder-whiteext-base outline-none text-black dark:text-white p-2 leading-8 transition-colors duration-200 ease-in-out"/>
             </div>
             <div  className="p-2 w-full">
-              <input required placeholder="Email" type="email" name="from_email" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none text-base outline-none text-black dark:text-white p-2 leading-8 transition-colors duration-200 ease-in-out"/>
+              <motion.input 
+              layout='position'
+              initial={{opacity:0,y:59}}
+               whileInView={{opacity:1,y:0}}
+               viewport={{once:false, amount:'0.1'}}
+               transition={{duration:1,stiffness:120}}
+              required placeholder="Email" type="email" name="from_email" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none text-base outline-none text-black dark:text-white p-2 leading-8 transition-colors duration-200 ease-in-out"/>
             </div>
             <div className="p-2 w-full">
-              <textarea required placeholder="Message" name="message" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none h-32 text-base outline-none text-black dark:text-white p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              <motion.textarea 
+              layout='position'
+              initial={{opacity:0,y:59}}
+               whileInView={{opacity:1,y:0}}
+               viewport={{once:false, amount:'0.1'}}
+               transition={{duration:1,stiffness:120}}
+              required placeholder="Message" name="message" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none h-32 text-base outline-none text-black dark:text-white p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"></motion.textarea>
             </div>
             <div className="p-2 w-full">
               <button className=" font-medium mx-auto my-3 text-white bg-green-600 border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-green-300 hover:text-black transition duration-500 rounded-xl text-lg">

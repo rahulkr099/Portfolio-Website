@@ -1,12 +1,12 @@
 import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoRedux, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbDatabase, TbBrandPrisma } from "react-icons/tb";
 import { SiThemoviedatabase, SiExpress } from "react-icons/si";
-import ToDoImg from '/ToDoList.png'
-import MusicPlayerImg from '/Music-Player.png'
-import StopWatchImg from '/StopWatch.png'
-import TellMeAJokeImg from '/Tell-Me-A-Joke.png'
-import CountDownTimerImg from '/CountDown-Timer.png'
-import BookMarkKeeperImg from '/BookMark-Keeper.png'
+import ToDoImg from '/ToDoList.webp'
+import MusicPlayerImg from '/Music-Player.webp'
+import StopWatchImg from '/StopWatch.webp'
+import TellMeAJokeImg from '/Tell-Me-A-Joke.webp'
+import CountDownTimerImg from '/CountDown-Timer.webp'
+import LightDarkImg from '/Light&Dark.webp'
 
 const ProjectsData = [
   {
@@ -56,12 +56,12 @@ const ProjectsData = [
   },
   {
     id: "6",
-    name: "BookMark Keeper",
-    image: BookMarkKeeperImg,
+    name: "Light & Dark Mode",
+    image: LightDarkImg,
     icons: [ BiLogoTailwindCss,BiLogoHtml5, BiLogoJavascript],
-    description: "This application allows users to save bookmark of any website.",
-    github: "https://github.com/rahulkr099/Bookmark-Keeper",
-    demo: "https://rahulkr099.github.io/Bookmark-Keeper/",
+    description: "This application allows users to switch between dark and light mode.",
+    github: "https://github.com/rahulkr099/Light-Dark-Mode",
+    demo: "https://rahulkr099.github.io/Light-Dark-Mode/",
   },
 ];
 

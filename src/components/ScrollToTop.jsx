@@ -25,11 +25,11 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <div>
+    <div >
     <button
       onClick={scrollToTop}
       className={`${
-        showButton ? "fixed bottom-4 right-4" : "hidden"
+        showButton ? "fixed bottom-4 right-4 sm:right-6 md:right-10" : "hidden"
       } bg-green-500 p-1 rounded-full hover:bg-orange-500 text-white shadow-lg transition duration-900`}
     >
       <FaCircleArrowUp className="w-6 h-6 lg:w-8 lg:h-8" />

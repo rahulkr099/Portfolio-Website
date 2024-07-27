@@ -14,8 +14,8 @@ export default {
         "whitesmoke": "#f5f5f5",
       },
       backgroundImage: {
-        'day': "url('/src/assets/Images/day.jpg')",
-        'night': "url('/src/assets/Images/night.jpg')",
+        'day': "url('/src/assets/Images/day.webp')",
+        'night': "url('/src/assets/Images/night.webp')",
       },
     },
   },

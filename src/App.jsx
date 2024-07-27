@@ -1,7 +1,6 @@
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
-// import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import ScrollToTopButton from './components/ScrollToTop';
@@ -10,8 +9,6 @@ import Home from './pages/Home';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import ParticleBG from './components/ParticleBG';
-
-import { useEffect } from 'react';
 
 function App() {
 
@@ -22,7 +19,6 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      {/* <Experience/> */}
       <Contact />
       <Footer />
       <ScrollToTopButton />

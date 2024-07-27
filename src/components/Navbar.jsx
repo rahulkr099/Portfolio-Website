@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
-import NameImg from "../assets/Images/name.png"
+import NameImg from "../assets/Images/name.webp"
 import { useTheme } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
 
@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <header className="body-font fixed inset-x-0 z-50 bg-gray-300 text-black dark:bg-neutral-900 dark:text-white">
+    <header className="body-font fixed inset-x-0 z-50 w-screen bg-[rgba(255,255,255,0.8)] text-black h-20  dark:bg-[rgba(56,56,56,0.6)] dark:text-white">
     
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
@@ -106,6 +106,7 @@ const Navbar = () => {
             }`}
           ></div>
           <div
+          
             className={`absolute left-2 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 dark:bg-white transition border-[1.9px] border-red-300 dark:border-gray-800 bg-opacity-60 dark:bg-opacity-20 ${
               isChecked ? 'translate-x-full' : ''
             }`}
@@ -119,15 +120,15 @@ const Navbar = () => {
         >
           <button onClick={toggleMenu} className="p-2 text-white">
             {isMenuOpen ? (
-              <MdClose className="h-6 w-6" />
+              <MdClose className="h-6 w-6 text-red-500 hover:font-bold hover:scale-150" />
             ) : (
-              <BiMenu className="h-6 w-6" />
+              <BiMenu className="h-6 w-6 text-black dark:text-white hover:scale-150 hover:text-green-400 dark:hover:text-green-400" />
             )}
           </button>
         </div>
         {isMenuOpen && (
           <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden">
-            <div className="rounded-b-lg bg-gray-300 text-black dark:text-white dark:bg-gray-800 shadow-lg px-5 pb-4 ">
+            <div className="rounded-b-lg bg-[rgba(114,181,186,0.1)] text-black dark:text-white backdrop-blur dark:bg-[rgba(56,56,56,0.6)] shadow-lg px-5 pb-4 ">
               <nav
                 
                 className="flex flex-col gap-y-7 text-xl"
@@ -144,7 +145,9 @@ const Navbar = () => {
                       to={item.link}
                       className="cursor-pointer hover:text-green-400"
                     >
-                      {item.title}
+                     <motion.div
+                     whileHover={{scale:1.5,textShadow:"0px 0px 8px rgba(0,255,0,0.5)"}}
+                     > {item.title}</motion.div>
                     </Link>
                   );
                 })}
