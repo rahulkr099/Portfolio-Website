@@ -38,7 +38,7 @@ const About = () => {
           <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
             <motion.p
               layout='position'
-              initial={{opacity:0,x:359}}
+              initial={{opacity:0,x:59}}
               whileInView={{opacity:1,x:0}}
               viewport={{once:false, amount:'0.1'}}
               transition={{duration:1.5,stiffness:120}}
