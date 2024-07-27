@@ -23,7 +23,7 @@ const About = () => {
         <div className="mx-auto flex lg:flex-row flex-col items-center justify-center">
           <motion.div
             layout='position'
-            initial={{opacity:0,x:-159}}
+            initial={{opacity:0,x:-59}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:2,stiffness:120}}
