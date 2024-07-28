@@ -86,7 +86,7 @@ const Contact = () => {
               required placeholder="Message" name="message" className="mb-1 w-full bg-gray-300 dark:bg-gray-700 placeholder-black dark:placeholder-white rounded-md border border-green-400 shadow-inner shadow-green-400 focus:border-indigo-500 focus:bg-gray-100 focus:ring-2 focus:ring-indigo-600 focus:border-none focus:shadow-none h-32 text-base outline-none text-black dark:text-white p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"></motion.textarea>
             </div>
             <div className="p-2 w-full">
-              <button className=" font-medium mx-auto my-3 text-white bg-green-600 border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-green-300 hover:text-black transition duration-500 rounded-xl text-lg">
+              <button className=" font-medium mx-auto my-3 text-white bg-green-600 border-0 py-2 px-12 focus:outline-none hover:scale-110 hover:bg-white hover:text-black transition duration-500 rounded-xl text-lg">
                 Send
               </button>
             </div>

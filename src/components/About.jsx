@@ -5,6 +5,8 @@ import {motion} from 'framer-motion'
 
 const About = () => {
   const {theme} = useTheme()
+
+  
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
     <section className="body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
@@ -58,7 +60,7 @@ const About = () => {
               whileInView={{opacity:1,y:0}}
               viewport={{once:false, amount:'0.1'}}
               transition={{duration:1,stiffness:120}}
-              className="inline-flex font-medium text-white bg-gray-900 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-green-500 hover:text-black rounded-full text-md xl:px-10">
+              className="inline-flex font-medium text-white bg-gray-900 border-2 border-white py-3 px-7 focus:outline-none hover:bg-white hover:border-green-500 hover:text-black rounded-full text-md xl:px-10">
                 <Link
                 spy={true}
                 smooth={true}
@@ -70,8 +72,8 @@ const About = () => {
                 </Link>
               </motion.button>
               <a
-                // href="https://drive.google.com/drive/u/1/folders/1VLbE3u0gC3x66ClPWCUmcK75DuhTAyKx"
-                href="#"
+                // href="https://drive.google.com/drive/"
+                onClick={()=> alert("Need some time for building Resume")}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -81,7 +83,7 @@ const About = () => {
                 whileInView={{opacity:1,y:0}}
                 viewport={{once:false, amount:'0.1'}}
                 transition={{duration:1,stiffness:120}}
-                className="inline-flex font-medium text-white bg-green-500 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
+                className="inline-flex font-medium text-white bg-green-500 border-2 border-white py-3 px-7 focus:outline-none hover:bg-white hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
                 </motion.button>
               </a>

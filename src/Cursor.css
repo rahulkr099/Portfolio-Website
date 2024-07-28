@@ -1,51 +1,42 @@
-* {
-    cursor: none;
+*{  cursor:none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@property --angle {
+@property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
-    inherits: false;
+    inherits:false;
 }
-
-.cursor-outline {
+.cursor-outline{
     width: 35px;
     height: 35px;
     border: 2px solid greenyellow;
     mix-blend-mode: multiply;
     z-index: 8998;
-    box-shadow: inset 3px 4px 9px 2px rgba(3, 233, 3, 0.953);
+    box-shadow:inset 3px 4px 9px 2px rgba(3, 233, 3, 0.953);
 }
-
-.cursor-dot {
+.cursor-dot{
     width: 15px;
     height: 15px;
     box-shadow: 1px 2px 9px 3px rgba(rgb(50, 241, 94));
-    background: conic-gradient(from var(--angle), #ff5f6d, #ffc371, #ffd700, #32cd32, #00fa9a, #1e90ff, #9370db, #ff5f6d);
-    animation: rotate 1s infinite linear;
+    background: conic-gradient(from var(--angle),#ff5f6d,#ffc371,#ffd700,#32cd32,#00fa9a,#1e90ff,#9370db,#ff5f6d);
+    animation: rotate 1s infinite linear;        
 }
-
-.cursor-dot,
-.cursor-outline {
+.cursor-dot, .cursor-outline{
     position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
+    top: 0;left: 0;
+    transform: translate(-50%,-50%);
     border-radius: 50%;
     z-index: 999;
-
+    
     pointer-events: none;
 }
-
-@keyframes rotate {
-    from {
-        --angle: 0deg;
+@keyframes rotate{
+    from{
+        --angle:0deg;
     }
-
-    to {
-        --angle: 360deg;
+    to{
+        --angle:360deg;
     }
 }

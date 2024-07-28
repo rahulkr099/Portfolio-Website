@@ -16,7 +16,7 @@ const ProjectsData = [
     icons: [BiLogoReact,BiLogoTailwindCss],
     description: "This website is used to set tasks and goals for productivity.",
     github: "https://github.com/rahulkr099/To-Do-List",
-    demo: "https://rahulkr099.github.io/To-Do-List/",
+    demo: "https://to-do-list-mu-puce.vercel.app/",
   },
   {
     id: "2",
