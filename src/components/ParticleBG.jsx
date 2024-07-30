@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import {useTheme} from "../useContext/ThemeContext";
+import { useContext, useEffect, useMemo, useState } from "react";
+import {ThemeContext} from "../useContext/ThemeContext";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 //Go to https://github.com/tsparticles/react/#readme
 //npm install @ts-particles/react
@@ -27,7 +27,7 @@ const ParticleBG = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
-  const {theme} = useTheme()
+  const {theme} = useContext(ThemeContext)
   const options = useMemo(
     () => ({
       background: {

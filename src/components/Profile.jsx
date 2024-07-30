@@ -1,12 +1,13 @@
 import { Typewriter } from "react-simple-typewriter";
-import { Link } from "react-scroll";
+import Buttons from "./Buttons";
 import SocialHandles from "./SocialHandles";
 import ProfilePic from "../assets/Images/dp.webp"
-import { useTheme } from "../useContext/ThemeContext";
+import { ThemeContext } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
+import { useContext } from "react";
 
 const Profile = () => {
-  const { theme } = useTheme()
+  const { theme } = useContext(ThemeContext)
   return (
     <div className={`${theme === "Light" ? 'light' : 'dark'}`}>
       <section className="body-font overflow-hidden pt-16 lg:min-h-75vh bg-gray-200 text-black dark:bg-black dark:text-white">
@@ -66,45 +67,7 @@ const Profile = () => {
             >
               I craft applications using MongoDB, Express, React, and Node.
             </motion.p>
-            <div
-
-              className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
-            >
-              <motion.button 
-              layout='position'
-              initial={{opacity:0,y:59}}
-              whileInView={{opacity:1,y:0}}
-              viewport={{once:false, amount:'0.1'}}
-              transition={{duration:1,stiffness:120}}
-              className="inline-flex font-medium text-white bg-gray-900 border-2 border-white py-3 px-7 focus:outline-none hover:bg-white hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={750}
-                >
-                  Hire Me
-                </Link>
-              </motion.button>
-              <a
-                // href="https://drive.google.com/drive/u/"
-                onClick={()=> alert("Need some time for building Resume")}
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <motion.button 
-                 layout='position'
-                 initial={{opacity:0,y:59}}
-                 whileInView={{opacity:1,y:0}}
-                 viewport={{once:false, amount:'0.1'}}
-                 transition={{duration:1,stiffness:120}}
-                className="inline-flex font-medium text-white bg-green-500 border-2 border-white py-3 px-7 focus:outline-none hover:bg-white hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
-                  Get Resume
-                </motion.button>
-              </a>
-            </div>
+            <Buttons/>
           </div>
         </div>
         {/* Wave  */}

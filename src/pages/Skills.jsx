@@ -1,8 +1,9 @@
-import SkillsData from './SkillsData'
-import { useTheme } from "../useContext/ThemeContext";
+import { useContext } from 'react';
+import SkillsData from '../Data/SkillsData'
+import { ThemeContext } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
 const Skills = () => {
-  const {theme} = useTheme()
+  const {theme} = useContext(ThemeContext)
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
     <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">

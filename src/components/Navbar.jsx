@@ -1,12 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import NameImg from "../assets/Images/name.webp"
-import { useTheme } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
-
-
+import ToggleMode from "./ToggleMode";
+import { ThemeContext } from "../useContext/ThemeContext";
 const links = [
   {
     title: "Home",
@@ -35,16 +34,9 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [isChecked, setIsChecked] = useState(false)
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked)
-  }
-
+ 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const {theme,toggleTheme} = useTheme()
-  console.log('themeName:',theme)
-  console.log("theme:",toggleTheme);
+  const {theme} = useContext(ThemeContext)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -91,28 +83,7 @@ const Navbar = () => {
               </Link>
             );
           })}
-        <label className='flex cursor-pointer select-none items-center w-16 '>
-        <div className='relative right-6'>
-          <input
-            type='checkbox'
-            checked={isChecked}
-            onClick={toggleTheme}
-            onChange={handleCheckboxChange}
-            className='sr-only'
-          />
-          <div
-            className={`box block h-10 w-20 rounded-full ${
-              isChecked ?'bg-day bg-cover':'bg-night bg-cover'
-            }`}
-          ></div>
-          <div
-          
-            className={`absolute left-2 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 dark:bg-white transition border-[1.9px] border-red-300 dark:border-gray-800 bg-opacity-60 dark:bg-opacity-20 ${
-              isChecked ? 'translate-x-full' : ''
-            }`}
-          ></div>
-        </div>
-      </label>
+        <ToggleMode></ToggleMode>
         </nav>
         <div
           
@@ -151,27 +122,7 @@ const Navbar = () => {
                     </Link>
                   );
                 })}
-              <label className='flex cursor-pointer select-none items-center w-16 '>
-        <div className='relative left-28 md:left-80 '>
-          <input
-            type='checkbox'
-            checked={isChecked}
-            onClick={toggleTheme}
-            onChange={handleCheckboxChange}
-            className='sr-only'
-          />
-          <div
-            className={`box block h-10 w-20 rounded-full ${
-              isChecked ?'bg-day bg-cover':'bg-night bg-cover'
-            }`}
-          ></div>
-          <div
-            className={`absolute left-2 top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400 dark:bg-white transition border-[1.9px] border-red-300 dark:border-gray-800 bg-opacity-60 dark:bg-opacity-20 ${
-              isChecked ? 'translate-x-full' : ''
-            }`}
-          ></div>
-        </div>
-      </label>
+             <div className="mx-auto"> <ToggleMode></ToggleMode></div>
 
               </nav>
             </div>

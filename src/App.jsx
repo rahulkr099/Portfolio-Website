@@ -1,10 +1,10 @@
 import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Projects from './components/Projects';
+import Projects from './pages/Projects';
 import ScrollToTopButton from './components/ScrollToTop';
-import Skills from './components/Skills';
+import Skills from './pages/Skills';
 import Home from './pages/Home';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";

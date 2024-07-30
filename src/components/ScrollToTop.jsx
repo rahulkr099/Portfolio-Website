@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaCircleArrowUp } from 'react-icons/fa6'
 
-
 const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
 

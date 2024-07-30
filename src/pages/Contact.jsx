@@ -1,13 +1,13 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import SocialHandles from "./SocialHandles";
-import { useTheme } from "../useContext/ThemeContext";
+import SocialHandles from "../components/SocialHandles";
+import { ThemeContext } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
 
 const Contact = () => {
-  const {theme} = useTheme()
+  const {theme} = useContext(ThemeContext)
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
