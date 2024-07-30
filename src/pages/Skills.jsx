@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import SkillsData from '../Data/SkillsData'
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import {motion} from 'framer-motion'
 const Skills = () => {
   const {theme} = useContext(ThemeContext)

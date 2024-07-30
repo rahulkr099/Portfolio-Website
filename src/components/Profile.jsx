@@ -2,7 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Buttons from "./Buttons";
 import SocialHandles from "./SocialHandles";
 import ProfilePic from "../assets/Images/dp.webp"
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import {motion} from 'framer-motion'
 import { useContext } from "react";
 

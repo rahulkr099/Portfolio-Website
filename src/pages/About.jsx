@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import AboutImg from "../assets/Images/about.webp"
 import Buttons from "../components/Buttons";
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import { motion } from 'framer-motion'
 
 const About = () => {

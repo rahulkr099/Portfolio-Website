@@ -3,10 +3,9 @@ import { TbBrandNextjs, TbApi,} from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import ComingSoonImg from '/Coming Soon.png'
 
-
 const MernData = [
     {
-      id: "1",
+      id: 1,
       name: "StudyNotion",
       image: ComingSoonImg,
       icons: [BiLogoReact,BiLogoTailwindCss,BiLogoMongodb],
@@ -15,7 +14,7 @@ const MernData = [
       demo: "#",
     },
     {
-      id: "2",
+      id: 2,
       name: "Music Academy",
       image: ComingSoonImg,
       icons: [BiLogoTailwindCss, TbBrandNextjs,BiLogoMongodb],
@@ -24,7 +23,7 @@ const MernData = [
       demo: "#",
     },
     {
-      id: "3",
+      id: 3,
       name: "Blog Post",
       image: ComingSoonImg,
       icons: [ BiLogoTailwindCss,TbApi,BiLogoReact,BiLogoMongodb],
@@ -33,7 +32,7 @@ const MernData = [
       demo: "#",
     },
     {
-      id: "4",
+      id: 4,
       name: "Twitter Clone",
       image: ComingSoonImg,
       icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
@@ -42,11 +41,11 @@ const MernData = [
       demo: "#",
      } ,
      {
-      id: "4",
+      id: 5,
       name: "StackOverflov Clone",
       image: ComingSoonImg,
       icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
-      description: "This is basic fledged stackoverlflow clone with backend.",
+      description: "This is basic fledged stackoverflow clone with backend.",
       github: "#",
       demo: "#",
      } ,

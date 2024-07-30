@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import SocialHandles from "../components/SocialHandles";
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import {motion} from 'framer-motion'
 
 const Contact = () => {

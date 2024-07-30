@@ -1,4 +1,4 @@
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import { useState,useContext } from "react";
 function ToggleMode() {
     const [isChecked, setIsChecked] = useState(false)

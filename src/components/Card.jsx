@@ -50,7 +50,7 @@ function Card({props}) {
   )
 }
 Card.propTypes = {
-  reverse: PropTypes.func.isRequired,
+  reverse: PropTypes.func,
   props: PropTypes.arrayOf(
     PropTypes.shape({
       // Define the shape of each object in the array
@@ -63,4 +63,4 @@ Card.propTypes = {
     })
   ).isRequired,
 };
-export default Card
+export default Card;

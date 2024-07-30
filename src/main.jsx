@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import './index.css';
 
-import { ThemeProvider } from './useContext/ThemeContext.jsx';
+import { ThemeProvider } from './Hooks/ThemeContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ThemeProvider>

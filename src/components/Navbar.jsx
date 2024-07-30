@@ -5,7 +5,7 @@ import { MdClose } from "react-icons/md";
 import NameImg from "../assets/Images/name.webp"
 import {motion} from 'framer-motion'
 import ToggleMode from "./ToggleMode";
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 const links = [
   {
     title: "Home",

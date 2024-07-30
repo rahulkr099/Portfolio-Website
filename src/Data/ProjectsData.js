@@ -19,7 +19,7 @@ import CountDownTimerImg from '/CountDown-Timer.webp'
 
 const ProjectsData = [
   {
-    id: "1",
+    id: 1,
     name: "To Do List",
     image: ToDoImg,
     icons: [BiLogoReact,BiLogoTailwindCss,BiLogoHtml5],
@@ -28,7 +28,7 @@ const ProjectsData = [
     demo: "https://to-do-list-mu-puce.vercel.app/",
   },
   {
-    id: "2",
+    id: 2,
     name: "CountDown Timer",
     image: CountDownTimerImg,
     icons: [BiLogoCss3, BiLogoHtml5,BiLogoJavascript],
@@ -37,7 +37,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Countdown-Timer/",
   },
   {
-    id: "3",
+    id: 3,
     name: "Tell Me A Joke",
     image: TellMeAJokeImg,
     icons: [ BiLogoCss3,TbApi,BiLogoHtml5,BiLogoJavascript],
@@ -46,7 +46,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Tell-Me-a-Joke/",
   },
   {
-    id: "4",
+    id: 4,
     name: "StopWatch",
     image: StopWatchImg,
     icons: [BiLogoHtml5, BiLogoReact, BiLogoTailwindCss],
@@ -55,7 +55,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/StopWatch/",
   },
   {
-    id: "5",
+    id: 5,
     name: "English Dictionary",
     image: DictImg,
     icons: [ BiLogoCss3,BiLogoHtml5,BiLogoJavascript],
@@ -64,7 +64,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Dictionary-App/",
   },
   {
-    id: "7",
+    id: 6,
     name: "Drawing App",
     image: DrawAppImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -73,7 +73,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Drawing-App/",
   },
   {
-    id: "8",
+    id: 7,
     name: "Image Editor",
     image: ImgEditorImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -82,7 +82,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Image-Editor/",
   },
   {
-    id: "9",
+    id: 8,
     name: "Dev Detective",
     image: DevDetectImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -91,7 +91,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Dev-Detective/",
   },
   {
-    id: "10",
+    id: 9,
     name: "Image Resizer",
     image: ImgResizeImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -100,7 +100,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Image-Resizer/",
   },
   {
-    id: "11",
+    id: 10,
     name: "Weather App",
     image: WeatherImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript,TbApi],
@@ -109,7 +109,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Weather-App/",
   },
   {
-    id: "12",
+    id: 11,
     name: "Password Generator",
     image: PassGenImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -118,7 +118,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Password-Generator/",
   },
   {
-    id: "13",
+    id: 12,
     name: "Note Taking App",
     image: NoteTakingImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -127,7 +127,7 @@ const ProjectsData = [
     demo: "https://rahulkr099.github.io/Note-Taking-App/",
   },
   {
-    id: "14",
+    id: 13,
     name: "Currency Converter",
     image: CurrencyConvImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoReact,TbApi],
@@ -136,7 +136,7 @@ const ProjectsData = [
     demo: "https://currency-converter-chi-topaz.vercel.app/",
   },
   {
-    id: "15",
+    id: 14,
     name: "Tic Tac Toe",
     image: TicTacToeImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],

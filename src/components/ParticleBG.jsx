@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo, useState } from "react";
-import {ThemeContext} from "../useContext/ThemeContext";
+import {ThemeContext} from "../Hooks/ThemeContext";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 //Go to https://github.com/tsparticles/react/#readme
 //npm install @ts-particles/react

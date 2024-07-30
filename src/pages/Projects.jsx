@@ -1,5 +1,5 @@
 import ProjectsData from "../Data/ProjectsData";
-import { ThemeContext } from "../useContext/ThemeContext";
+import { ThemeContext } from "../Hooks/ThemeContext";
 import MernData from "../Data/MernProjects";
 import Card from '../components/Card'
 import { useContext } from "react";
