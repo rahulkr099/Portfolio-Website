@@ -15,9 +15,9 @@ function Card({props}) {
             initial={{scale:0.9,boxShadow:'1px 1px 9px 0px rgba(5,251,28,1)'}}  
             whileHover={{scale:1.1,boxShadow:'1px 4px 9px 0px rgba(255,55,255,0.9)'}}
             transition={{duration:1.1, yoyo:Infinity}}
-            key={project.id} className={`${project.type === "mern" ? 'h-44 mx-auto rounded-xl group shadow-md' : 'h-44 rounded-xl shadow-md group relative mx-auto'}`}>
+            key={project.id} className={`${project.type === "mern" ? 'h-64 mx-auto rounded-xl group shadow-md' : 'h-44 rounded-xl shadow-md group relative mx-auto'}`}>
               
-              <img src={project.image} alt={project.name} className={`${project.type === "mern" ? 'h-44 w-full rounded-xl shadow-md p-1' : 'h-44 w-full rounded-xl shadow-md p-1'}`}/>
+              <img src={project.image} alt={project.name} className={`${project.type === "mern" ? 'h-64 w-full rounded-xl shadow-md p-1' : 'h-44 w-full rounded-xl shadow-md p-1'}`}/>
               
               <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-auto group-hover:h-full transition-[height_0.5s] backdrop-blur-md duration-500 rounded-xl">
                 <h3 className={`${project.bgCol === "white" ? 'text-black' : 'text-white'} text-xl font-medium my-0`}>{project.name}</h3>
