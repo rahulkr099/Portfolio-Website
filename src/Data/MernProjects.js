@@ -6,6 +6,8 @@ import ComingSoonImg from '/Coming Soon.png'
 const MernData = [
     {
       id: 1,
+      bgCol: 'notwhite',
+      type:'mern',
       name: "StudyNotion",
       image: ComingSoonImg,
       icons: [BiLogoReact,BiLogoTailwindCss,BiLogoMongodb],
@@ -15,6 +17,8 @@ const MernData = [
     },
     {
       id: 2,
+      bgCol: 'notwhite',
+      type:'mern',
       name: "Music Academy",
       image: ComingSoonImg,
       icons: [BiLogoTailwindCss, TbBrandNextjs,BiLogoMongodb],
@@ -24,6 +28,8 @@ const MernData = [
     },
     {
       id: 3,
+      bgCol: 'notwhite',
+      type:'mern',
       name: "Blog Post",
       image: ComingSoonImg,
       icons: [ BiLogoTailwindCss,TbApi,BiLogoReact,BiLogoMongodb],
@@ -33,6 +39,8 @@ const MernData = [
     },
     {
       id: 4,
+      bgCol: 'notwhite',
+      type:'mern',
       name: "Twitter Clone",
       image: ComingSoonImg,
       icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
@@ -42,7 +50,9 @@ const MernData = [
      } ,
      {
       id: 5,
-      name: "StackOverflov Clone",
+      bgCol: 'notwhite',
+      type:'mern',
+      name: "StackOverflow Clone",
       image: ComingSoonImg,
       icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
       description: "This is basic fledged stackoverflow clone with backend.",
@@ -51,3 +61,34 @@ const MernData = [
      } ,
 ]
 export default MernData;
+export const timeline = [
+  {
+    name: "Open Source",
+    sub: "GirlScript Summer of Code (GSSoC)",
+    date: '10th MAY 2024 - 10th AUG 2024',
+    from: "GirlScript Summer of Code is a 3-month long #OpenSource program by GirlScript Foundation.",
+    grade: null,
+  },
+{
+    name: "Full Stack Developer",
+    sub: 'Mern-Stack (MongoDB, Express, React.js, and Node.js)',
+    date: 'JAN 2024 - AUG 2024',
+    from: 'I have learnt Web Dev through Online Courses and also get certifications from there.',
+    grade: null,
+  },
+  {
+    name: 'Data Structure & Algorithm',
+    sub: 'Arrays, Linked List, Stacks, Queues, Trees, Graphs, Hash Tables, Searching Algorithm, Sorting Algorithm, Divide & Conquer Algorithms, Recursion.',
+    date: 'AUG 2024  - DEC 2024',
+    from: 'Data Structures are like the Lego bricks of programming—they help us organize and manage data efficiently. C++ is like the heavyweight champion of programming languages. ',
+    grade: null,
+  },
+  {
+    name: 'Graduation',
+    sub: 'OOPs, Operating System, Data Structure and Algorithm, DBMS, Computer Networks, Fundamentals of Artificial Intelligence.',
+    date: 'JULY 2023 - AUG 2026',
+    from: 'Currently pursuing Bachelor of Computer Applications (BCA) from KRISHNA BALLAV COLLEGE, BERMO, BOKARO',
+    grade: '8.0 (CGPA)'
+  }
+]
+

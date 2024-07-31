@@ -20,6 +20,8 @@ import CountDownTimerImg from '/CountDown-Timer.webp'
 const ProjectsData = [
   {
     id: 1,
+    type:'mini',
+    bgCol:'notwhite',
     name: "To Do List",
     image: ToDoImg,
     icons: [BiLogoReact,BiLogoTailwindCss,BiLogoHtml5],
@@ -29,6 +31,8 @@ const ProjectsData = [
   },
   {
     id: 2,
+    type:'mini',
+    bgCol:'notwhite',
     name: "CountDown Timer",
     image: CountDownTimerImg,
     icons: [BiLogoCss3, BiLogoHtml5,BiLogoJavascript],
@@ -38,6 +42,8 @@ const ProjectsData = [
   },
   {
     id: 3,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Tell Me A Joke",
     image: TellMeAJokeImg,
     icons: [ BiLogoCss3,TbApi,BiLogoHtml5,BiLogoJavascript],
@@ -47,6 +53,8 @@ const ProjectsData = [
   },
   {
     id: 4,
+    type:'mini',
+    bgCol:'notwhite',
     name: "StopWatch",
     image: StopWatchImg,
     icons: [BiLogoHtml5, BiLogoReact, BiLogoTailwindCss],
@@ -56,6 +64,8 @@ const ProjectsData = [
   },
   {
     id: 5,
+    type:'mini',
+    bgCol:'notwhite',
     name: "English Dictionary",
     image: DictImg,
     icons: [ BiLogoCss3,BiLogoHtml5,BiLogoJavascript],
@@ -65,6 +75,8 @@ const ProjectsData = [
   },
   {
     id: 6,
+    type:'mini',
+    bgCol:'white',
     name: "Drawing App",
     image: DrawAppImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -74,6 +86,8 @@ const ProjectsData = [
   },
   {
     id: 7,
+    type:'mini',
+    bgCol:'white',
     name: "Image Editor",
     image: ImgEditorImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -83,6 +97,8 @@ const ProjectsData = [
   },
   {
     id: 8,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Dev Detective",
     image: DevDetectImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -92,6 +108,8 @@ const ProjectsData = [
   },
   {
     id: 9,
+    type:'mini',
+    bgCol:'white',
     name: "Image Resizer",
     image: ImgResizeImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -101,6 +119,8 @@ const ProjectsData = [
   },
   {
     id: 10,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Weather App",
     image: WeatherImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript,TbApi],
@@ -110,6 +130,8 @@ const ProjectsData = [
   },
   {
     id: 11,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Password Generator",
     image: PassGenImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -119,6 +141,8 @@ const ProjectsData = [
   },
   {
     id: 12,
+    type:'mini',
+    bgCol:'white',
     name: "Note Taking App",
     image: NoteTakingImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],
@@ -128,6 +152,8 @@ const ProjectsData = [
   },
   {
     id: 13,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Currency Converter",
     image: CurrencyConvImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoReact,TbApi],
@@ -137,6 +163,8 @@ const ProjectsData = [
   },
   {
     id: 14,
+    type:'mini',
+    bgCol:'notwhite',
     name: "Tic Tac Toe",
     image: TicTacToeImg,
     icons: [ BiLogoCss3,BiLogoHtml5, BiLogoJavascript],

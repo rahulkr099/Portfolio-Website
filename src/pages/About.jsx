@@ -7,17 +7,15 @@ import { motion } from 'framer-motion'
 const About = () => {
   const { theme } = useContext(ThemeContext)
 
-
   return (
-    <div className={`${theme === "Light" ? 'light' : 'dark'}`}>
+    <div id="about" className={`${theme === "Light" ? 'light' : 'dark'}`}>
       <section className="body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
-        <div className="p-5 mt-3 mx-auto md:mt-5 md:mx-10 lg:mx-16">
-          <div id="about" className="flex flex-col text-center w-full mb-3">
+        <div className="p-5 mx-auto md:mt-0 md:mx-10 lg:mx-16">
+          <div  className="flex flex-col text-center w-full mb-3">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2">
               About Me
             </h1>
             <p
-
               className="text-lg mx-auto leading-relaxed font-medium text-green-400 text-center"
             >
               Why hire me ?

@@ -5,6 +5,7 @@ import ProfilePic from "../assets/Images/dp.webp"
 import { ThemeContext } from "../Hooks/ThemeContext";
 import {motion} from 'framer-motion'
 import { useContext } from "react";
+import '../../src/App.css'
 
 const Profile = () => {
   const { theme } = useContext(ThemeContext)

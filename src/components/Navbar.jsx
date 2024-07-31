@@ -6,28 +6,34 @@ import NameImg from "../assets/Images/name.webp"
 import {motion} from 'framer-motion'
 import ToggleMode from "./ToggleMode";
 import { ThemeContext } from "../Hooks/ThemeContext";
+import homeImg from '/svg/home.svg'
+import aboutImg from '/svg/about.svg'
+import skillsImg from '/svg/skills.svg'
+import projectsImg from '/svg/projects.svg'
+import experienceImg from '/svg/experience.svg'
+import contactImg from '/svg/contact.svg'
 const links = [
-  {
+  {  icon: homeImg,
     title: "Home",
     link: "home",
   },
-  {
+  { icon: aboutImg,
     title: "About",
     link: "about",
   },
-  {
+  { icon: skillsImg,
     title: "Skills",
     link: "skills",
   },
-  {
+  { icon: projectsImg,
     title: "Projects",
     link: "projects",
   },
-  // {
-  //   title: "Experience",
-  //   link: "experience",
-  // },
-  {
+  { icon: experienceImg,
+    title: "Experience",
+    link: "experience",
+  },
+  { icon: contactImg,
     title: "Contact",
     link: "contact",
   },
@@ -79,7 +85,7 @@ const Navbar = () => {
               >
                 <motion.div
                 whileHover={{scale:1.5,textShadow:"0px 0px 8px rgba(0,255,0,0.5)"}}
-                >{item.title}</motion.div>
+                ><div className="flex"><img src={item.icon} alt="" className="h-7"/>{item.title}</div></motion.div>
               </Link>
             );
           })}
@@ -117,8 +123,9 @@ const Navbar = () => {
                       className="cursor-pointer hover:text-green-400"
                     >
                      <motion.div
+                     
                      whileHover={{scale:1.5,textShadow:"0px 0px 8px rgba(0,255,0,0.5)"}}
-                     > {item.title}</motion.div>
+                     ><div className="flex justify-center items-center"><img src={item.icon} alt="" className="h-7"/>{item.title}</div></motion.div>
                     </Link>
                   );
                 })}

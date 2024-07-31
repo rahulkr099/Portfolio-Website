@@ -1,8 +1,9 @@
-import './App.css';
+
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import ScrollToTopButton from './components/ScrollToTop';
 import Skills from './pages/Skills';
 import Home from './pages/Home';
@@ -13,12 +14,13 @@ import ParticleBG from './components/ParticleBG';
 function App() {
 
   return (
-    <div className="App">
+    <div>
       <ParticleBG></ParticleBG>
       <Home />
       <About />
       <Skills />
       <Projects />
+      <Experience/>
       <Contact />
       <Footer />
       <ScrollToTopButton />

@@ -5,10 +5,10 @@ import {motion} from 'framer-motion'
 const Skills = () => {
   const {theme} = useContext(ThemeContext)
   return (
-    <div className={`${theme==="Light"?'light':'dark'}`}>
+    <div id="skills" className={`${theme==="Light"?'light':'dark'}`}>
     <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
-      <div className="p-4 pt-0 mt-5 mx-auto md:p-5 md:mx-20 lg:mx-32 xl:mx-56">
-        <div id="skills" className="flex flex-wrap w-full mb-4 flex-col justify-center text-center md:mb-7">
+      <div className="p-4 pt-0 mt-0 mx-auto md:p-5 md:mx-20 lg:mx-32 xl:mx-56">
+        <div  className="flex flex-wrap w-full mb-4 flex-col justify-center text-center md:mb-7">
           <h1 className="sm:text-4xl text-3xl font-medium mb-2 ">
             Skills
           </h1>
