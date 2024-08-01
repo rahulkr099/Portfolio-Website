@@ -1,8 +1,8 @@
-/* *{  cursor:none;
+*{  cursor:none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
