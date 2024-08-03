@@ -53,6 +53,36 @@ const Experience = () => {
             })}
           </motion.ul>
         </div>
+        <h2 className='text-center text-5xl m-6 text-green-400' >🗽 My Github Stats</h2>
+<div className='flex flex-col justify-center items-center'>
+        <p className='m-2'> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rahulkr099&theme=monokai&column=3&margin-w=15&margin-h=15" alt="rahulkr099" /></a> </p>
+
+<div>
+ <motion.img
+ layout='position'
+ initial={{ opacity: 0, x: 59 }}
+ whileInView={{ opacity: 1, x: 0 }}
+ viewport={{ once: false, amount: '0.1' }}
+ transition={{ duration: 2, stiffness: 120 }} 
+ alt="7oSkaaa's Github Stats" align="right" src="https://github-readme-stats.vercel.app/api?username=rahulkr099&show_icons=true&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=10" height="300px"/>
+
+<motion.img 
+layout='position'
+initial={{ opacity: 0, x: -59 }}
+whileInView={{ opacity: 1, x: 0 }}
+viewport={{ once: false, amount: '0.1' }}
+transition={{ duration: 2, stiffness: 120 }}
+className='m-2' alt="status github, commits, etc..." width="500px" align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=rahulkr099&count_private=true&show_icons=true&custom_title=Github&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8" />
+<motion.img 
+layout='position'
+initial={{ opacity: 0, y:89 }}
+whileInView={{ opacity: 1, y: 0 }}
+viewport={{ once: false, amount: '0.1' }}
+transition={{ duration: 2, stiffness: 120 }}
+
+align="left" className='m-2' alt="most used languages" width="500px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulkr099&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8&langs_count=20&hide=hack,swift,kotlin,objective-c"/>
+</div>
+</div>
       </div>
     </section>
   );
