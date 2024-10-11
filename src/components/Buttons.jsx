@@ -23,8 +23,8 @@ function Buttons() {
         </Link>
       </motion.button>
       <a
-        // href="https://drive.google.com/drive/"
-        onClick={() => alert("Need some time for building Resume")}
+        href="https://drive.google.com/file/d/1S0QbVixb750hmAWU7s0H6HjSX3IIBDy1/view?usp=sharing"
+        
         target="_blank"
         rel="noreferrer"
       >
