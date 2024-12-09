@@ -73,9 +73,9 @@ export const timeline = [
 {
     name: "Full Stack Developer",
     sub: 'Mern-Stack (MongoDB, Express, React.js, and Node.js)',
-    link:``,
-    date: 'Jan 2024 - Aug 2024',
-    from: 'I have learnt Web Dev through Online Courses and also get certifications from there.',
+    link:`https://drive.google.com/file/d/1sQa8JZc7dC1QfJhr7Xj9qBg8hBig9H9P/view?usp=sharing`,
+    date: 'Feb 2024 - Dec 2024',
+    from: 'I have studied Web Development from Udemy Course. I have learnt a lot of modern technologies regarding web development and best industrial practices.',
     
   },
   {
