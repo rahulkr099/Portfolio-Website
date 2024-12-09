@@ -81,9 +81,9 @@ export const timeline = [
   {
     name: 'Data Structure & Algorithm',
     sub: 'Arrays, Linked List, Stacks, Queues, Trees, Graphs, Hash Tables, Searching Algorithm, Sorting Algorithm, Divide & Conquer Algorithms, Recursion.',
-    link:``,
+    link:`https://drive.google.com/file/d/1Cmzbm_53PMHh-TqsXoEiezaFregbsQk7/view?usp=sharing`,
     date: 'Dec 2024  - Mar 2025',
-    from: 'Data Structures are like the Lego bricks of programming—they help us organize and manage data efficiently. C++ is like the heavyweight champion of programming languages. ',
+    from: 'Data Structures are like the Lego bricks of programming—they help us organize and manage data efficiently. Java is like the heavyweight champion of programming languages. ',
     
   },
   {
