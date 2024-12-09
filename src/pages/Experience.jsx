@@ -35,7 +35,7 @@ const Experience = () => {
                   viewport={{ once: false, amount: '0.1' }}
                   transition={{ duration: 2, stiffness: 120 }}
                   key={index} className='backdrop-blur-md mt-4 flex flex-col pl-5 border-l-4 p-2 w-2/3 border-green-400 rounded-lg shadow-sm shadow-green-300 hover:shadow-purple-600 hover:border-purple-600'>
-                  <h1 className='text-lg lg:text-xl font-semibold text-blue-500'>{curr.name}</h1>
+                  <h1 className='text-lg lg:text-xl font-semibold text-blue-500'>{curr.name} <span><a className='cursor-pointer' href={curr.link} target='_blank'>🔗</a></span></h1>
                   <h4 className='font-bold text-xs uppercase'>{curr.date}</h4>
                   <p className="mt-2" >{curr.from}</p>
                   <ul className="list-disc list-inside mt-2 text-sm">
