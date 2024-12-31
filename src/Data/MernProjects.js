@@ -1,19 +1,20 @@
-import { BiLogoMongodb, BiLogoReact,BiLogoTailwindCss, } from "react-icons/bi";
+import { BiLogoMongodb, BiLogoNodejs,BiLogoTailwindCss, } from "react-icons/bi";
 import { TbBrandNextjs, TbApi,} from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import ComingSoonImg from '/Coming Soon.png'
+import BlogifyImg from '/Blogify.png'
 
 const MernData = [
     {
       id: 1,
       bgCol: 'notwhite',
       type:'mern',
-      name: "StudyNotion",
-      image: ComingSoonImg,
-      icons: [BiLogoReact,BiLogoTailwindCss,BiLogoMongodb],
-      description: "This web app is for students to learn through courses.",
-      github: "#",
-      demo: "#",
+      name: "Blogify App",
+      image: BlogifyImg,
+      icons: [BiLogoMongodb,SiExpress,BiLogoNodejs],
+      description: "This web app is used for uploading blog.",
+      github: "https://github.com/rahulkr099/Blogify-App",
+      demo: "https://blogify-beryl.vercel.app/",
     },
     {
       id: 2,
@@ -26,39 +27,39 @@ const MernData = [
       github: "#",
       demo: "#",
     },
-    {
-      id: 3,
-      bgCol: 'notwhite',
-      type:'mern',
-      name: "Blog Post",
-      image: ComingSoonImg,
-      icons: [ BiLogoTailwindCss,TbApi,BiLogoReact,BiLogoMongodb],
-      description: "This application helps you to upload and save blog posts with backend.",
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 4,
-      bgCol: 'notwhite',
-      type:'mern',
-      name: "Twitter Clone",
-      image: ComingSoonImg,
-      icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
-      description: "This is fully fledged twitter clone with backend.",
-      github: "#",
-      demo: "#",
-     } ,
-     {
-      id: 5,
-      bgCol: 'notwhite',
-      type:'mern',
-      name: "StackOverflow Clone",
-      image: ComingSoonImg,
-      icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
-      description: "This is basic fledged stackoverflow clone with backend.",
-      github: "#",
-      demo: "#",
-     } ,
+    // {
+    //   id: 3,
+    //   bgCol: 'notwhite',
+    //   type:'mern',
+    //   name: "Blog Post",
+    //   image: ComingSoonImg,
+    //   icons: [ BiLogoTailwindCss,TbApi,BiLogoReact,BiLogoMongodb],
+    //   description: "This application helps you to upload and save blog posts with backend.",
+    //   github: "#",
+    //   demo: "#",
+    // },
+    // {
+    //   id: 4,
+    //   bgCol: 'notwhite',
+    //   type:'mern',
+    //   name: "Twitter Clone",
+    //   image: ComingSoonImg,
+    //   icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
+    //   description: "This is fully fledged twitter clone with backend.",
+    //   github: "#",
+    //   demo: "#",
+    //  } ,
+    //  {
+    //   id: 5,
+    //   bgCol: 'notwhite',
+    //   type:'mern',
+    //   name: "StackOverflow Clone",
+    //   image: ComingSoonImg,
+    //   icons: [  SiExpress, BiLogoReact, BiLogoTailwindCss,BiLogoMongodb],
+    //   description: "This is basic fledged stackoverflow clone with backend.",
+    //   github: "#",
+    //   demo: "#",
+    //  } ,
 ]
 export default MernData;
 export const timeline = [
