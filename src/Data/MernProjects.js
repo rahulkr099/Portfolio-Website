@@ -12,7 +12,7 @@ const MernData = [
       name: "Blogify App",
       image: BlogifyImg,
       icons: [BiLogoMongodb,SiExpress,BiLogoNodejs],
-      description: "This web app is used for uploading blog.",
+      description: "This web app is used for creating and uploading blogs.",
       github: "https://github.com/rahulkr099/Blogify-App",
       demo: "https://blogify-beryl.vercel.app/",
     },
@@ -68,7 +68,7 @@ export const timeline = [
     sub: "GirlScript Summer of Code Extended (GSSoC)",
     link:`https://drive.google.com/file/d/1K5FIdZJ-HcP-FMnL8OIi52mxxhs9raXA/view?usp=sharing`,
     date: 'Oct 2024 - Nov 2024',
-    from: "I have done contribution in #OpenSource program by GirlScript Foundation. And their Open Source Contribution made to public repositories is considered highly valuable for my skills growth.",
+    from: "I have done contribution in #OpenSource program by GirlScript Foundation. And their Open Source Contribution made to public repositories is highly valuable for my skills growth and learning.",
     
   },
 {
@@ -80,11 +80,11 @@ export const timeline = [
     
   },
   {
-    name: 'Data Structure & Algorithm',
-    sub: 'Arrays, Linked List, Stacks, Queues, Trees, Graphs, Hash Tables, Searching Algorithm, Sorting Algorithm, Divide & Conquer Algorithms, Recursion.',
-    link:`https://drive.google.com/file/d/1Cmzbm_53PMHh-TqsXoEiezaFregbsQk7/view?usp=sharing`,
-    date: 'Dec 2024  - Mar 2025',
-    from: 'Data Structures are like the Lego bricks of programming—they help us organize and manage data efficiently. Java is like the heavyweight champion of programming languages. ',
+    name: 'MERN Intership',
+    sub: 'MongoDB, ReactJS, ExpressJS, NodeJS, Problem Solving',
+    link:`https://drive.google.com/file/d/1Z2RdCVRTKRxhbDWHlDOnmtI5W0iWqmjz/view?usp=sharing`,
+    date: 'Oct 2024 - Dec 2024',
+    from: 'I had the incredible opportunity to work on MERN stack projects, which allowed me to enhance my technical skills and gain hands-on experience.',
     
   },
   {
