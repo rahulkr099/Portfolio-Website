@@ -1,8 +1,10 @@
 import { useContext } from "react";
-import AboutImg from "../assets/Images/about.webp"
+// import AboutImg from "../assets/Images/about.webp"
 import Buttons from "../components/Buttons";
 import { ThemeContext } from "../Hooks/ThemeContext";
 import { motion } from 'framer-motion'
+
+const AboutImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681424/about_ynvrxg.webp"
 
 const About = () => {
   const { theme } = useContext(ThemeContext)

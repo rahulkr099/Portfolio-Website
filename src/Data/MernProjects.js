@@ -1,8 +1,11 @@
 import { BiLogoMongodb, BiLogoNodejs,BiLogoTailwindCss, } from "react-icons/bi";
 import { TbBrandNextjs, TbApi,} from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
-import ComingSoonImg from '/Coming Soon.png'
-import BlogifyImg from '/Blogify.png'
+// import ComingSoonImg from '/Coming Soon.png'
+// import BlogifyImg from '/Blogify.png'
+const ComingSoonImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681211/Coming_Soon_nmklxj.png"
+
+const BlogifyImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/Blogify_ifn0lb.png"
 
 const MernData = [
     {

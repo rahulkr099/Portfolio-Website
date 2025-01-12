@@ -1,21 +1,40 @@
-import htmlImage from '../assets/Images/html.webp';
-import cssImage from '../assets/Images/css.webp';
-import JavaScriptImage from '../assets/Images/javascript.webp';
-import TypeScriptImage from '../assets/Images/typescript.webp';
-import MongoDBImage from '../assets/Images/mongodb.webp';
-import ExpressImage from '../assets/Images/express.webp';
-import ReactImage from '../assets/Images/react.webp';
-import NodeImage from '../assets/Images/node.webp';
-import ReduxImage from '../assets/Images/redux.webp';
-import NextImage from '../assets/Images/next.webp';
-import TailwindImage from '../assets/Images/tailwind.webp';
-import FirebaseImage from '../assets/Images/firebase.webp';
-import PrismaImage from '../assets/Images/prisma.webp';
-import MySQLImage from '../assets/Images/mysql.webp';
-import PostmanImage from '../assets/Images/postman.webp';
-import VsCodeImage from '../assets/Images/vscode.webp';
-import GitImage from '../assets/Images/git.webp';
-import GitHubImage from '../assets/Images/github.webp';
+// import htmlImage from '../assets/Images/html.webp';
+// import cssImage from '../assets/Images/css.webp';
+// import JavaScriptImage from '../assets/Images/javascript.webp';
+// import TypeScriptImage from '../assets/Images/typescript.webp';
+// import MongoDBImage from '../assets/Images/mongodb.webp';
+// import ExpressImage from '../assets/Images/express.webp';
+// import ReactImage from '../assets/Images/react.webp';
+// import NodeImage from '../assets/Images/node.webp';
+// import ReduxImage from '../assets/Images/redux.webp';
+// import NextImage from '../assets/Images/next.webp';
+// import TailwindImage from '../assets/Images/tailwind.webp';
+// import FirebaseImage from '../assets/Images/firebase.webp';
+// import PrismaImage from '../assets/Images/prisma.webp';
+// import MySQLImage from '../assets/Images/mysql.webp';
+// import PostmanImage from '../assets/Images/postman.webp';
+// import VsCodeImage from '../assets/Images/vscode.webp';
+// import GitImage from '../assets/Images/git.webp';
+// import GitHubImage from '../assets/Images/github.webp';
+const htmlImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681428/html_op6uqa.webp"
+const cssImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681424/css_jmc07f.webp"
+const JavaScriptImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681431/javascript_fkup6t.webp"
+const TypeScriptImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681444/typescript_lyzgcm.webp"
+const MongoDBImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681432/mongodb_pivkxi.webp"
+const ExpressImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681426/express_w284pj.webp"
+const ReactImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681440/react_k42nky.webp"
+const NodeImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681437/node_ddwqns.webp"
+const ReduxImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681441/redux_tqx3dz.webp"
+const NextImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681435/next_ihgcor.webp"
+const TailwindImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681442/tailwind_a2cihu.webp"
+const FirebaseImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681426/firebase_l2sqpq.webp"
+const PrismaImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681439/prisma_dxw9rd.webp"
+const MySQLImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681432/mysql_ovdzur.webp"
+const PostmanImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681438/postman_sh3esi.webp"
+const VsCodeImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681445/vscode_acakda.webp"
+const GitImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681427/git_sdf3ht.webp"
+const PythonImage = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681440/python_qdenhv.webp"
+
 const SkillsData = [
   {
     id: "1",
@@ -105,7 +124,7 @@ const SkillsData = [
   {
     id: "18",
     name: "GitHub",
-    image: GitHubImage,
+    image: PythonImage,
   },
 ];
 

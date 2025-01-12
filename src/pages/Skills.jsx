@@ -26,7 +26,7 @@ const Skills = () => {
           {SkillsData.map((Skill) => {
             return (
               <div key={Skill.id} className="flex flex-col w-20 h-20 items-center justify-center md:w-24 md:h-24 lg:m-3 xl:m-5 mx-auto">
-                <img src={Skill.image} alt={Skill.name} className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-150"/>
+                <img src={Skill.image} loading='lazy' alt={Skill.name} className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-150"/>
                 <p>{Skill.name}</p>
               </div>
             );

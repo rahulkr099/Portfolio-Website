@@ -1,20 +1,35 @@
 import { BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
 
-import ToDoImg from '/ToDoList.webp'
-import DictImg from '/DictionaryApp.webp'
-import DrawAppImg from '/DrawingApp.webp'
-import ImgEditorImg from '/ImageEditor.webp'
-import ImgResizeImg from '/ImageResizer.webp'
-import DevDetectImg from '/DevDetective.webp'
-import WeatherImg from '/WeatherApp.webp'
-import PassGenImg from '/PasswordGenerator.webp'
-import NoteTakingImg from '/NoteTakingApp.webp'
-import CurrencyConvImg from '/Currency Converter.webp'
-import TicTacToeImg from '/Tic Tac Toe.webp'
-import StopWatchImg from '/StopWatch.webp'
-import TellMeAJokeImg from '/Tell-Me-A-Joke.webp'
-import CountDownTimerImg from '/CountDown-Timer.webp'
+// import ToDoImg from '/ToDoList.webp'
+// import DictImg from '/DictionaryApp.webp'
+// import DrawAppImg from '/DrawingApp.webp'
+// import ImgEditorImg from '/ImageEditor.webp'
+// import ImgResizeImg from '/ImageResizer.webp'
+// import DevDetectImg from '/DevDetective.webp'
+// import WeatherImg from '/WeatherApp.webp'
+// import PassGenImg from '/PasswordGenerator.webp'
+// import NoteTakingImg from '/NoteTakingApp.webp'
+// import CurrencyConvImg from '/Currency Converter.webp'
+// import TicTacToeImg from '/Tic Tac Toe.webp'
+// import StopWatchImg from '/StopWatch.webp'
+// import TellMeAJokeImg from '/Tell-Me-A-Joke.webp'
+// import CountDownTimerImg from '/CountDown-Timer.webp'
+
+const ToDoImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681215/ToDoList_yad0ui.webp"
+const DictImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681211/DictionaryApp_ik63ey.webp"
+const DrawAppImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681211/DrawingApp_o93jco.webp"
+const ImgEditorImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/ImageEditor_p8ypqv.webp"
+const ImgResizeImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/ImageResizer_yycyyb.webp"
+const DevDetectImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/DevDetective_zecxky.webp"
+const WeatherImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681216/WeatherApp_sdobil.webp"
+const PassGenImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/PasswordGenerator_c5toeu.webp"
+const NoteTakingImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/NoteTakingApp_pyavzg.webp"
+const CurrencyConvImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681211/Currency_Converter_twnydx.webp"
+const TicTacToeImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681216/Tic_Tac_Toe_qcaypg.webp"
+const StopWatchImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681215/StopWatch_lmxng7.webp"
+const TellMeAJokeImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681215/Tell-Me-A-Joke_hg44vo.webp"
+const CountDownTimerImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681211/CountDown-Timer_y3ceab.webp"
 
 
 const ProjectsData = [

@@ -12,6 +12,7 @@ import skillsImg from '/svg/skills.svg'
 import projectsImg from '/svg/projects.svg'
 import experienceImg from '/svg/experience.svg'
 import contactImg from '/svg/contact.svg'
+
 const links = [
   {  icon: homeImg,
     title: "Home",
