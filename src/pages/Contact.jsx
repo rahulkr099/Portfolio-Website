@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <div  className="flex gap-3 items-center mb-4 md:gap-2 lg:gap-5">
               <FaEnvelope className="dark:text-white text-black" />
-              <a href="mailto:techaffairs4@gmail.com" className=" md:text-lg">techaffairs4@gmail.com</a>
+              <a href="mailto:rkrsharma15@gmail.com" className=" md:text-lg">rkrsharma15@gmail.com</a>
             </div>
             <div  className="flex gap-3 items-center md:gap-2 lg:gap-5">
               <FaMapMarkerAlt className="dark:text-white text-black" />

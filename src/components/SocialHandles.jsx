@@ -18,7 +18,7 @@ const SocialHandles = () => {
         <a className="cursor-pointer text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-125" href="https://x.com/rahul_kr_dev" rel="noreferrer" target="_blank">
           <FaXTwitter />
         </a>
-        <a className="cursor-pointer text-[#5865F2] text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-125" href="https://discordapp.com/users/rahulkumar04703" rel="noreferrer" target="_blank">
+        <a className="cursor-pointer text-[#5865F2] text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-125" href="https://discord.com/channels/1324308323226353697/1324308323226353700" rel="noreferrer" target="_blank">
           <FaDiscord />
         </a>
     </div>
