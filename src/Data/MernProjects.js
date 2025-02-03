@@ -1,4 +1,4 @@
-import { BiLogoMongodb, BiLogoNodejs,BiLogoTailwindCss, } from "react-icons/bi";
+import { BiLogoMongodb, BiLogoNodejs,BiLogoTailwindCss,BiLogoReact } from "react-icons/bi";
 import { TbBrandNextjs, TbApi,} from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 // import ComingSoonImg from '/Coming Soon.png'
