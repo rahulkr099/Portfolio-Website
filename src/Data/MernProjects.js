@@ -7,6 +7,8 @@ const ComingSoonImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v173668
 
 const BlogifyImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1736681212/Blogify_ifn0lb.png"
 
+const ShortlyAppImg = "https://res.cloudinary.com/dvawqmwkh/image/upload/v1738577750/Screenshot_from_2025-02-03_15-34-53_izg41o.png"
+
 const MernData = [
     {
       id: 1,
@@ -23,18 +25,18 @@ const MernData = [
       id: 2,
       bgCol: 'notwhite',
       type:'mern',
-      name: "Music Academy",
-      image: ComingSoonImg,
-      icons: [BiLogoTailwindCss, TbBrandNextjs,BiLogoMongodb],
-      description: 'This web app is for music learners.',
-      github: "#",
-      demo: "#",
+      name: "Shortly App",
+      image: ShortlyAppImg,
+      icons: [BiLogoTailwindCss,BiLogoReact ,BiLogoMongodb,BiLogoNodejs],
+      description: 'This is a powerful URL shortener that helps you create short links, customize them.',
+      github: "https://github.com/rahulkr099/Shortly",
+      demo: "https://www.shortlyapp.in",
     },
     // {
     //   id: 3,
     //   bgCol: 'notwhite',
     //   type:'mern',
-    //   name: "Blog Post",
+    //   name: "Shortly App",
     //   image: ComingSoonImg,
     //   icons: [ BiLogoTailwindCss,TbApi,BiLogoReact,BiLogoMongodb],
     //   description: "This application helps you to upload and save blog posts with backend.",
