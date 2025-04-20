@@ -75,7 +75,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: '0.1' }}
               transition={{ duration: 2, stiffness: 120 }}
-              className='m-2' alt="status github, commits, etc..." width="500px" align="left" src="https://github-readme-stats.vercel.app/api?username=rahulkr099&show_icons=true&locale=en"  />
+              className='m-2' alt="status github, commits, etc..." width="500px" align="left" src="https://github-readme-stats.vercel.app/api?username=rahulkr099&show_icons=true&locale=en" />
             <motion.img
               layout='position'
               initial={{ opacity: 0, y: 89 }}
@@ -83,7 +83,7 @@ const Experience = () => {
               viewport={{ once: false, amount: '0.1' }}
               transition={{ duration: 2, stiffness: 120 }}
 
-              align="left" className='m-2' width="500px" src="https://github-readme-stats.vercel.app/api/top-langs?username=rahulkr099&show_icons=true&locale=en&layout=compact" alt="Top Lang Used"/>
+              align="left" className='m-2' width="500px" src="https://github-readme-stats.vercel.app/api/top-langs?username=rahulkr099&show_icons=true&locale=en&layout=compact" alt="Top Lang Used" />
           </div>
         </div>)
           :
@@ -117,8 +117,19 @@ const Experience = () => {
                 align="left" className='m-2' alt="most used languages" width="500px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulkr099&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8&langs_count=20&hide=hack,swift,kotlin,objective-c" />
             </div>
           </div>)}
-
-
+        <h2 className='text-center text-5xl mt-9 m-8 text-green-400' >### 🛡️ TryHackMe Badge</h2>
+        
+        <motion.p align="center"
+        layout='position'
+        initial={{ opacity: 0, y: 89 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: '0.1' }}
+        transition={{ duration: 2, stiffness: 120 }}
+        >
+          <a href="https://tryhackme.com/p/rahulkrsh" target="_blank">
+            <img src="https://tryhackme-badges.s3.amazonaws.com/rahulkrsh.png" alt="Your Image Badge" />
+          </a>
+        </motion.p>
       </div>
     </section>
   );
