@@ -117,7 +117,7 @@ const Experience = () => {
                 align="left" className='m-2' alt="most used languages" width="500px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulkr099&count_private=true&theme=algolia&bg_color=0,000000,130F40&layout=compact&border_radius=8&langs_count=20&hide=hack,swift,kotlin,objective-c" />
             </div>
           </div>)}
-        <h2 className='text-center text-5xl mt-9 m-8 text-green-400' >### 🛡️ TryHackMe Badge</h2>
+        <h2 className='text-center text-4xl mt-9 m-8 text-green-400' >### 🛡️ TryHackMe Badge</h2>
         
         <motion.p align="center"
         layout='position'
@@ -128,6 +128,25 @@ const Experience = () => {
         >
           <a href="https://tryhackme.com/p/rahulkrsh" target="_blank">
             <img src="https://tryhackme-badges.s3.amazonaws.com/rahulkrsh.png" alt="Your Image Badge" />
+          </a>
+        </motion.p>
+        <h2 className='text-center text-5xl mt-9 m-8 text-green-400' >## 💻 Coding Ninjas</h2>
+        
+        <motion.p align="center"
+        layout='position'
+        initial={{ opacity: 0, y: 89 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: '0.1' }}
+        transition={{ duration: 2, stiffness: 120 }}
+        >
+          <a href="https://www.naukri.com/code360/profile/rkrsharma" target="_blank">
+          <div className="w-80 h-96">
+  <img
+    className="w-full h-full object-contain rounded-lg"
+    src="https://res.cloudinary.com/dvawqmwkh/image/upload/v1746649151/coding-ninjas-badge-ezgif.com-png-to-webp-converter_d2urn8.webp"
+    alt="Your Image Badge"
+  />
+</div>
           </a>
         </motion.p>
       </div>
