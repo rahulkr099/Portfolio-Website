@@ -143,7 +143,7 @@ const Experience = () => {
           <div className="w-80 h-96">
   <img
     className="w-full h-full object-contain rounded-lg"
-    src="https://res.cloudinary.com/dvawqmwkh/image/upload/v1746649151/coding-ninjas-badge-ezgif.com-png-to-webp-converter_d2urn8.webp"
+    src="https://res.cloudinary.com/dvawqmwkh/image/upload/v1746730365/coding-ninjas_ghlsdr.webp"
     alt="Your Image Badge"
   />
 </div>
