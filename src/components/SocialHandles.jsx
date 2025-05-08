@@ -7,7 +7,7 @@ const SocialHandles = () => {
         <a className="cursor-pointer text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-150" href="https://github.com/rahulkr099" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        <a className="cursor-pointer text-blue-500 text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-125" href="https://www.linkedin.com/in/rahul-kumar-1a5165287/" target="_blank" rel="noreferrer">
+        <a className="cursor-pointer text-blue-500 text-2xl md:text-xl transition duration-700 animate-bounce hover:scale-125" href="www.linkedin.com/in/rahulkr099" target="_blank" rel="noreferrer">
           <FaLinkedin />
         </a>
         
