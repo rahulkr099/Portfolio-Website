@@ -23,7 +23,7 @@ function Buttons() {
         </Link>
       </motion.button>
       <a
-        href="https://drive.google.com/file/d/10mSlPv8vcblW-eeSOTnsPLGJsA2t8R0r/view?usp=sharing"
+        href="https://drive.google.com/file/d/1CTnAtzVo1ro3rBhDy_RUuQe1IbzLwJyJ/view?usp=sharing"
         
         target="_blank"
         rel="noreferrer"
